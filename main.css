@@ -6,6 +6,8 @@
 
 body{
     position: relative;
+    width: 100vw;
+    height: 100vh;
     background-color: lightblue;
 }
 
@@ -13,8 +15,72 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(50%);
-    width: 20rem;
+    transform: translate(-50%, -50%);
+    width: 15rem;
     height: 10rem;
-    background-color: red;
+}
+
+.shark div{
+  position: absolute;
+}
+
+.shark-body{
+  background-color: green;
+  width: 100%;
+  height: 10rem;
+  clip-path: polygon(0% 50%, 100% 50%, 100% 90%, 70% 70%, 90% 100%, 0% 100%);
+  transform: translate(0, -50%);
+  background: #aaa;
+  border-radius: 50%;
+}
+
+.shark-eye{
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  right: 3rem;
+  top: 0.4rem;
+  border-radius: 50%;
+  box-shadow: inset 0.1rem -0.5rem #000;
+}
+
+.shark-aleta, .shark-tail, .shark-fin{
+  width: 5rem;
+  height: 3rem;
+  box-shadow: 2rem 0rem #aaa;
+  transform: translate(-6rem, -1rem);
+  border-radius: 50%;
+}
+
+.shark-fin{
+  left: 10rem;
+}
+
+.shark-aleta{
+  box-shadow: 5vmin 1vmin #999;
+  bottom: 4rem;
+  left: 4rem;
+  transform: none;
+  clip-path: polygon(0% 50%, 200% 40%, 200% 200%, 0% 100%);
+}
+
+.shadow{
+    right: 5rem;
+    top: 1.3rem;
+    width: 1rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: -0.2rem 0 rgb(134, 134, 134);
+}
+
+.shadow-2{
+    top: 1.4rem;
+    right: 5.5rem;
+    height: 1.8rem;    
+}
+
+.shadow-3{
+    top: 1.5rem;
+    right: 6rem;
+    height: 1.6rem;    
 }
